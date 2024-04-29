@@ -4,6 +4,6 @@ import { getCodeById, saveCode } from "../controller/compiler.controller";
 const compilerRoute = Router();
 
 compilerRoute.post("/save", saveCode);
-compilerRoute.post("/load-code", getCodeById);
+compilerRoute.get("/load-code/:urlId", getCodeById);
 
 export default compilerRoute;

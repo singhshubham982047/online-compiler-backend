@@ -18,5 +18,5 @@ app.get("/", (req: Request, res: Response) => {
 
 connectDB().then(() => {
   app.listen(5000, () => console.log("server open on 5000"));
-  console.log("server open");
+  console.log("connected to database");
 });
